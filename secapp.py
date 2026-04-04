@@ -33,7 +33,6 @@ col1, col2 = st.columns([1, 3])
 
 with col1:
     st.image("omani_avatar.png", width=150)
-
 with col2:
     st.markdown("""
         <div style='text-align: left; padding-top: 20px;'>
@@ -48,7 +47,8 @@ with col2:
     """, unsafe_allow_html=True)
 
 st.markdown("---")
-
+import os
+st.write("Files Streamlit can see:", os.listdir("."))
 # --------------------------
 # CONSENT
 # --------------------------
