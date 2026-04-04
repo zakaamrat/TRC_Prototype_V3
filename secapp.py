@@ -32,10 +32,7 @@ for key in ["consent", "captcha_ok", "saved", "session_count"]:
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    st.image(
-        "https://raw.githubusercontent.com/zakaamrat/englishapp/main/omani_avatar.png",
-        width=150 
-    )
+    st.image("omani_avatar.png", width=150)
 
 with col2:
     st.markdown("""
@@ -188,19 +185,49 @@ if recognized_text and not st.session_state.saved:
     st.session_state.saved = True
     st.success("✔✔✔ Saved Successfully!")
 
-# --------------------------
-# REFRESH / NEW RECORD
-# --------------------------
-APP_URL = "https://trc-prototype-v2-english-evaluation-oman-school-level.streamlit.app/"
+    st.markdown("⭐⭐⭐⭐⭐")
+    st.markdown("شكراً لك 🙏")
+    st.markdown("Thank you!")
+
+import streamlit as st
+
+# 1. Define the specific URL of your application
+APP_URL = "https://trc-prototype-v2-english-evaluation-oman-school-level.streamlit.app/#read-translate-this-sentence-in-english-only"
+
+# 2. Styling for the "Hard Refresh" Button
+st.markdown("""
+<style>
+    .refresh-button {
+        display: inline-block;
+        padding: 0.5em 1em;
+        color: white;
+        background-color: #ff4b4b;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+    }
+    .refresh-button:hover {
+        background-color: #ff3333;
+        color: white;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# 3. The "New Record" Button Logic
 st.markdown(f"""
-    <style>
-    .refresh-button {{ display: inline-block; padding: 0.5em 1em; color: white; background-color: #ff4b4b; border-radius: 10px; text-decoration: none; font-weight: bold; text-align: center; width: 100%; cursor: pointer; }}
-    </style>
     <div style="text-align: center; direction: rtl;">
-        <a href="{APP_URL}" target="_self" class="refresh-button">🔄 تسجيل جديد / محاولة مرة أخرى</a>
+        <p style="color: #666; font-size: 14px;">للبدء من جديد ومسح الذاكرة المؤقتة، اضغط الزر أدناه:</p>
+        <a href="{APP_URL}" target="_self" class="refresh-button">
+            🔄 تسجيل جديد / محاولة مرة أخرى
+        </a>
     </div>
 """, unsafe_allow_html=True)
 
+# --------------------------
 # --------------------------
 # TEACHER LOGIN (SECURE)
 # --------------------------
