@@ -90,14 +90,25 @@ gender = st.selectbox("Gender", ["Male", "Female"])
 # --------------------------
 # SENTENCES
 # --------------------------
-arabic_sentences = [
-"أنا أحب الحديقة الكبيرة", "ذهبت إلى الحديقة مع أصدقائي", "أمس رأيت كلبًا في الحديقة",
-"أحمل حقيبة المدرسة كل يوم", "أستخدم القلم الأزرق في الصف", "أنا أحب وطني عمان كثيرًا",
-"أنا فخور بأنني من سلطنة عمان", "وطني عمان هو مصدر فخري", "أسعى لرفع اسم بلدي عاليًا"
-] * 10 
+# استدعاء الجمل من الخزنة السرية بدلاً من كتابتها هنا
+arabic_sentences = st.secrets["ARABIC_SENTENCES"] * 100
+# --------------------------
+# SENTENCES (SECURE)
+# --------------------------
+# نقوم بسحب الجمل من Secrets لتكون مخفية عن GitHub
+if "ARABIC_SENTENCES" in st.secrets:
+    arabic_sentences = st.secrets["ARABIC_SENTENCES"] * 10
+else:
+    # جمل احتياطية في حال تعذر الاتصال بالخزنة
+    arabic_sentences = ["يرجى إضافة الجمل في Secrets"]
 
 if "sentence" not in st.session_state:
     st.session_state.sentence = random.choice(arabic_sentences)
+
+st.subheader("📖 Read/translate this sentence in english only:")
+st.success(st.session_state.sentence)
+#if "sentence" not in st.session_state:
+   # st.session_state.sentence = random.choice(arabic_sentences)
 
 st.subheader("📖 Read/translate this sentence in english only:")
 st.success(st.session_state.sentence)
