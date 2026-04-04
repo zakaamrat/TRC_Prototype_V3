@@ -48,7 +48,7 @@ with col2:
 
 st.markdown("---")
 import os
-st.write("Files Streamlit can see:", os.listdir("."))
+#st.write("Files Streamlit can see:", os.listdir("."))
 # --------------------------
 # CONSENT
 # --------------------------
