@@ -39,11 +39,8 @@ with col2:
             <h3 style='margin-bottom: 0;'> Prototype App for evaluation of Omani school level with AI English Learning System</h3>
             <p style='font-size:14px; color: #555; margin-top: 5px;'>
                 <strong>Phonetic Approximation Capture</strong><br>
-                Building a pronunciation error corpus for Omani learners<br>
-               
-                <!-- Write your comments here 
-                Supported by The Research Council (TRC), Oman<br>
-                <i>Developed By Dr. Marwan @ Sohar University</i>-->
+                Building a pronunciation error corpus for Arab learners<br>
+                                                      
                 ICAIMT2026 Chabot simulator and adaptive recommendation systems:<br)
                 Enhancing Learner Profiling in AI-Assisted English Learning Using<br>
                 Weighted Cosine Similarity and Structure-Aware Clustering
