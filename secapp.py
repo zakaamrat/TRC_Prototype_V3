@@ -36,7 +36,7 @@ with col1:
 with col2:
     st.markdown("""
         <div style='text-align: left; padding-top: 20px;'>
-            <h3 style='margin-bottom: 0;'> Prototype App for evaluation of Omani school level with AI English Learning System</h3>
+            <h3 style='margin-bottom: 0;'> Prototype App for evaluation of Arab school level with AI English Learning System</h3>
             <p style='font-size:14px; color: #555; margin-top: 5px;'>
                 <strong>Phonetic Approximation Capture</strong><br>
                 Building a pronunciation error corpus for Arab learners<br>
