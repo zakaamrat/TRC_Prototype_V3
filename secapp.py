@@ -44,7 +44,7 @@ with col2:
                 ICAIMT2026 Chabot simulator and adaptive recommendation systems:<br)
                 Enhancing Learner Profiling in AI-Assisted English Learning Using<br>
                 Weighted Cosine Similarity and Structure-Aware Clustering
-            </p>
+           
         </div>
     """, unsafe_allow_html=True)
 
