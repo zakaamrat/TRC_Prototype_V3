@@ -41,9 +41,9 @@ with col2:
                 <strong>Phonetic Approximation Capture</strong><br>
                 Building a pronunciation error corpus for Arab learners<br>
                                                       
-                ICAIMT2026 Chabot simulator and adaptive recommendation systems:<br)
+                (Prototype V1)Chatbot simulator and adaptive recommendation systems:<br)
                 Enhancing Learner Profiling in AI-Assisted English Learning Using<br>
-                Weighted Cosine Similarity and Structure-Aware Clustering
+                Weighted Cosine Similarity and Structure-Aware Clustering (For more information, contact: MShare@su.edu.om)
            
         </div>
     """, unsafe_allow_html=True)
